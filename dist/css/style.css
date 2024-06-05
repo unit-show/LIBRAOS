@@ -972,6 +972,10 @@ html {
     min-width: 100%;
     resize: vertical;
   }
+  .hero-head{
+    display: flex;
+    align-items: center;
+  }
   .textarea .inline-textarea {
     display: inline;
     width: auto;
@@ -1120,6 +1124,11 @@ html {
   }
   .button-block {
     display: flex;
+  }
+  .header-brand{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   .site-header {
     position: relative;
@@ -1310,8 +1319,8 @@ html {
     .header-illustration-image {
       display: block;
       position: absolute;
-      top: -168px;
-      left: -722px;
+      top: -250px;
+      left: -622px;
       width: 1440px;
       height: 324px;
     }
@@ -1321,6 +1330,9 @@ html {
     align-items: center;
     font-weight: bold;
     margin: 3rem 0;
+  }
+  .features-title h2{
+    font-size: 3.3rem;
   }
   .features-title p{
     margin-bottom: 0;
@@ -1335,7 +1347,7 @@ html {
     font-size: 3.3rem;
     margin-right: 1rem;
     font-weight: 600;
-    color: #8595ae;
+    color: #8595ae ;
   }
   .features-container{
     display: flex;
@@ -1540,6 +1552,29 @@ html {
       padding-bottom: 88px;
     }
   }
+
+  .change-log{
+    display: table;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+    margin-left: 5rem;
+  }
+  .change-log-tittle h1{
+    font-size: 3.3rem;
+  }
+  .change-log-tittle .log{
+   color: #535fd7;
+  }
+  .change-log-tittle .change{
+    border-bottom:1px solid #ff4800
+  }
+
+  .log-box p{
+    font-size: medium;
+  }
+
   .site-footer {
     font-size: 14px;
     line-height: 20px;
@@ -1550,6 +1585,12 @@ html {
 
   .support{
     width: 60%;
+  }
+  .support img{
+    width: 5rem;
+  }
+  .support img .fah{
+    width: 9rem;
   }
   .site-footer a {
     color: #6b7a90;
