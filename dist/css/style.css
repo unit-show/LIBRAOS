@@ -420,8 +420,8 @@ html {
   h2,
   .h1,
   .h2 {
-    margin-top: 48px;
-    margin-bottom: 16px;
+    /* margin-top: 48px; */
+    /* margin-bottom: 16px; */
   }
   h3,
   .h3 {
@@ -640,7 +640,7 @@ html {
     margin: 0;
   }
   .mt-0 {
-    margin-top: 0;
+    /* margin-top: 0; */
   }
   .mr-0 {
     margin-right: 0;
@@ -1555,22 +1555,30 @@ html {
 
   .change-log{
     display: table;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     padding-bottom: 4rem;
     margin-left: 5rem;
   }
   .change-log-tittle h1{
-    font-size: 3.3rem;
+    font-size: 2rem;
   }
   .change-log-tittle .log{
-   color: #535fd7;
-  }
-  .change-log-tittle .change{
-    border-bottom:1px solid #ff4800
+   color: #ff4800;
   }
 
+  .log-box{
+    display: flex;
+  }
+  .log-box .version h2{
+    vertical-align: top;
+    margin: 0;
+    align-items: top;
+  }
+  .log-box .version{
+    padding-right: 2rem;
+    margin-right: 2rem;
+    border-right: 1px solid #000;
+    margin-bottom: 5rem;
+  }
   .log-box p{
     font-size: medium;
   }
@@ -1582,15 +1590,29 @@ html {
     background: #182538;
     color: #6b7a90;
   }
-
+  .support-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .support{
     width: 60%;
+  }
+  .support-logo{
+    display: grid;
+    grid-template-columns: 32% 32% 32% 32% 32%;
+    align-items: center;
+    justify-content: center;
   }
   .support img{
     width: 5rem;
   }
-  .support img .fah{
-    width: 9rem;
+  .support .fah{
+    width: 18rem;
+  }
+  .support .ipi{
+    width: 6rem;
   }
   .site-footer a {
     color: #6b7a90;
