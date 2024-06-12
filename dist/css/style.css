@@ -1861,9 +1861,14 @@ html {
   }
   .site-header-inner .navbar-nav a{
     text-decoration: none;
-    color: #6b7a90; 
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #fff; 
     margin: 1rem;
     font-weight: bold;
+    background-color: rgba(83, 94, 215, 0.719); 
+    padding: 0.5px 10px; 
+    border-radius: 8px;
+    font-size: 0.7rem;
   }
 /* navbar end */
 .hero-media-image {
@@ -1871,6 +1876,49 @@ html {
   box-shadow: 48px 16px 48px rgba(24, 37, 56, 0.12);
   border-radius: 4px;
   transform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%);
+}
+/* tablet */
+@media screen and (max-width: 700px) {
+  html{
+      font-size: 75%;
+  }
+  .hero-media{
+    margin-top: 4.3rem;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .hero-head h1{
+    margin: 0;
+  }
+  .hero-head h1{
+    font-size: 5rem;
+  }
+  .hero-copy p{
+    font-size: medium;
+  }
+  .hero-media-image{
+    transform: none;
+  }
+  .hero-media-container{
+    width: 60%;
+    display: flex;
+    left: 15px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .hero-media-illustration{
+    width: 55%;
+    left: 20px;
+  }
+  .features-box{
+    width: 70%;
+  }
+  .features-illustration{
+    width: 90%;
+  }
 }
 /* mobile */
 @media screen and (max-width: 400px) {
